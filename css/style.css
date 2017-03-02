@@ -1,0 +1,285 @@
+/*     Font styles     */
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'), url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'norwesterregular';
+    src: url('../fonts/norwester-webfont.woff2') format('woff2'), url('../fonts/norwester-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'norwesterregular', sans-serif;
+}
+
+p, h2, .webPageCv {
+    font-family: 'montserratlight', sans-serif;
+}
+
+
+/*     Page style     */
+
+body {
+    background: url(../img/SVG/8.svg) repeat top center / 80%;
+    /* 6*60%; 7*70%orCover; 8*80%orCover */
+}
+
+.wrapper {
+    margin: 0 auto;
+    /*width: 1024px;
+    height: 768px;*/
+    width: 1088px;
+    height: 1536px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/*     Header info     */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    background: url(../img/Develop-Optimal.jpg) #003454 no-repeat 0% 25% / 45%;
+}
+
+.textJS, .textHTML, .textCSS, .textJquery {
+    position: absolute;
+    font-family: 'montserratlight', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #003454;
+}
+
+.textJS {
+    top: 31px;
+    left: 143px;
+}
+
+.textHTML {
+    top: 157px;
+    left: 310px;
+}
+
+.textCSS {
+    top: 201px;
+    left: 136px;
+}
+
+.textJquery {
+    top: 31px;
+    left: 269px;
+}
+
+.myName {
+    float: right;
+    width: 50%;
+    height: 360px;
+    padding-top: 80px;
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-shadow: 4px 4px 15px black;
+}
+
+.lowerSize {
+    font-size: 48px;
+}
+
+.higherSize {
+    font-size: 74px;
+}
+
+.myName>p {
+    letter-spacing: 10px;
+    font-size: 20px;
+    /*font-size: 32px;*/
+}
+
+
+/*     Main info      */
+
+main {
+    width: 100%;
+    height: 1136px;
+    font-size: 0px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/*     Left part section     */
+
+.leftPart {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    height: 1136px;
+    background-color: #425370;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.leftPart>section {
+    width: 85%;
+    margin: 0 auto 50px auto;
+    color: white;
+}
+
+.leftPart>section:first-child {
+    margin-top: 80px;
+}
+
+.leftPart>section>h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.leftPart>section>p {
+    font-size: 20px;
+}
+
+.contactList {
+    font-size: 16px;
+    font-family: 'montserratlight', sans-serif;
+    /*font-variant: small-caps;*/
+}
+
+.contactList>li {
+    padding-left: 50px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.phone {
+    background: url(../img/contact-white-pattern.svg) no-repeat -41% 6% / 50%;
+}
+
+.telegram {
+    background: url(../img/contact-white-pattern.svg) no-repeat -42% 86% / 50%;
+}
+
+.email {
+    background: url(../img/contact-white-pattern.svg) no-repeat -41% 70% / 50%;
+}
+
+.facebook {
+    background: url(../img/contact-white-pattern.svg) no-repeat -41% 38% / 50%;
+}
+
+.linkedin {
+    background: url(../img/contact-white-pattern.svg) no-repeat -41% 54% / 50%;
+}
+
+.contactList>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+.hobbies>div {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 20%;
+}
+
+.reading {
+    background: url(../img/hobbies-white-pattern.svg) no-repeat 31% 4% / 550%;
+}
+
+.programming {
+    background: url(../img/hobbies-white-pattern.svg) no-repeat 31% 78% / 550%;
+}
+
+.kayak {
+    background: url(../img/hobbies-white-pattern.svg) no-repeat 69% 5% / 550%;
+}
+
+.guitar {
+    background: url(../img/hobbies-white-pattern.svg) no-repeat 69% 42% / 550%;
+}
+
+
+/*     Right part section     */
+
+.rightPart {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    height: 1136px;
+}
+
+.rightPart>section {
+    width: 85%;
+    margin: 0 auto 50px auto;
+    color: #003454;
+}
+
+.rightPart>section:first-child {
+    margin-top: 80px;
+}
+
+.rightPart>section>h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.rightPart>section>h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rightPart>section>p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.skillsList {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'montserratlight', sans-serif;
+}
+
+.skillsList>li {
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+
+/*     Footer info     */
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+}
+
+.webPageCv {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-variant: small-caps;
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+}
+
+.magicButtons {
+    display: none;
+}
